@@ -14,6 +14,7 @@
     --bg-icon_message: #6b757f;
     --bg-nav: #eaeaea;
     --icon_nav: #b1b1b1;
+    --col-notifiche: #8edafc;
 
 }
 
@@ -74,6 +75,17 @@
     
 }
 
+.col_notifiche{
+
+    width: 100%;
+    height: 60px;
+    border: 1px solid lightgrey;
+    background-color: var(--col-notifiche);
+    display: flex;
+    align-items: center;
+    
+}
+
 .col_nav{
 
     background-color: var(--bg-nav);
@@ -114,6 +126,13 @@
 
 /* detail layout */
 
+.profile_nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 img{
 
     width: 100%;
@@ -129,6 +148,18 @@ img{
     width: 10%;
     text-align: center;
     color: var(--bg-icon_message);
+
+}
+
+#icon_bell{
+
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 15px;
+
+
 
 }
 
