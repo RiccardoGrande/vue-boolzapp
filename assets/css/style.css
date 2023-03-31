@@ -83,6 +83,7 @@
     background-color: var(--col-notifiche);
     display: flex;
     align-items: center;
+    padding: 1rem;
     
 }
 
@@ -151,13 +152,22 @@ img{
 
 }
 
+#container_icon_bell{
+
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
 #icon_bell{
 
     width: 100%;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #fff;
-    font-size: 15px;
+    height: 20px;
+    color: var(--col-notifiche);
+    
+    
+    
 
 
 
