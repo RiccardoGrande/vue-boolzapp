@@ -110,6 +110,14 @@
 
 /* detail layout */
 
+img{
+
+    width: 10%;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
 
 
 .icon{
