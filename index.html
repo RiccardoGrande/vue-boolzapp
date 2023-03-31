@@ -53,9 +53,9 @@
                 <div class="col" v-for="chat in contacts">
                     <img :src="chat.avatar" alt="avatar_image" >
                     {{chat.name}}
-                    <div v-for="text in chat.messages">
-                        {{text.message}}
-                    </div>
+                    <span class="last_message">
+                       ultimo messaggio inviato
+                    </span>
                 </div>
                
                 <div class="col_empty_bottom"></div>
