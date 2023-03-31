@@ -13,6 +13,7 @@
     --bg-interact: #f3eeea;
     --bg-icon_message: #6b757f;
     --bg-nav: #eaeaea;
+    --icon_nav: #b1b1b1;
 
 }
 
@@ -79,6 +80,9 @@
     width: 100%;
     height: 50px;
     border: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .col_chat{
@@ -112,7 +116,7 @@
 
 img{
 
-    width: 10%;
+    width: 100%;
     height: 40px;
     border-radius: 50%;
 
@@ -125,6 +129,18 @@ img{
     width: 10%;
     text-align: center;
     color: var(--bg-icon_message);
+
+}
+
+.icon_nav{
+
+    width: 25%;
+    text-align: center;
+    color: var(--icon_nav);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
 
 }
 
