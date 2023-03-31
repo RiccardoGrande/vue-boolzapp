@@ -17,7 +17,7 @@
                 <div class="col_nav">
 
                     <div class="profile_nav">
-                        <img src="./assets/img/avatar_io.jpg" alt="avatar_io" srcset="">
+                        <img class="img_nav" src="./assets/img/avatar_io.jpg" alt="avatar_io" srcset="">
                         <div>
                             Sofia
                         </div>
@@ -51,22 +51,19 @@
                     </div>
                 </div>
                 <div class="col" v-for="chat in contacts">
-                    {{chat.avatar}}
-                    <!-- {{chat.name}} -->
+                    <img :src="chat.avatar" alt="avatar_image" >
+                    {{chat.name}}
+                    <div v-for="text in chat.messages">
+                        {{text.message}}
+                    </div>
                 </div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
+               
                 <div class="col_empty_bottom"></div>
             </div>
             <div class="debug row_chat_section">
                 <div class="col_nav">
                     <div class="profile_nav">
-                        <img src="./assets/img/avatar_1.jpg" alt="avatar_michele" srcset="">
+                        <img class="img_nav" src="./assets/img/avatar_1.jpg" alt="avatar_michele" srcset="">
                         <div>
                             Michele
                         </div>
