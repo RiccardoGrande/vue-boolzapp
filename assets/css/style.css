@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 
+/* utility */
+
 :root{
 
     --bg_green: #009688;
     --bg_grey: #dbdbd2;
+    --bg-interact: #f3eeea;
+    --bg-icon_message: #6b757f;
+    --bg-nav: #eaeaea;
 
 }
+
+/* layout */
 
 #app{
 
@@ -63,12 +70,12 @@
     height: 50px;
     border: 1px solid lightgrey;
     background-color: #ffff;
-
+    
 }
 
 .col_nav{
 
-    background-color: var(--bg_grey);
+    background-color: var(--bg-nav);
     width: 100%;
     height: 50px;
     border: 1px solid lightgrey;
@@ -86,5 +93,45 @@
     width: 100%;
     height: 60px;
     background-color: #fff;
+
+}
+
+.col_chat_interaction{
+
+    width: 100%;
+    height: 50px;
+    border: 1px solid lightgrey;
+    background-color: var( --bg-interact);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* detail layout */
+
+
+
+.icon{
+
+    width: 10%;
+    text-align: center;
+    color: var(--bg-icon_message);
+
+}
+
+#message_to_write{
+
+    width: 80%;
+
+}
+
+#input_message{
+
+
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
 
 }
