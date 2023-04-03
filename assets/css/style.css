@@ -15,6 +15,7 @@
     --bg-nav: #eaeaea;
     --icon_nav: #b1b1b1;
     --col-notifiche: #8edafc;
+    --col-active: #e9ebeb;
 
 }
 
@@ -76,6 +77,12 @@
     align-items: center;
     justify-content: space-between;
     
+}
+
+.col:active{
+
+    background-color: var(--col-active);
+
 }
 
 .col_notifiche{

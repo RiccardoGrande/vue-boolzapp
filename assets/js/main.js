@@ -11,6 +11,7 @@ createApp({
             
             currentDateHour: new Date().getHours(),
             currentDateMinutes: new Date().getMinutes(),
+            activeContact: 0,
             profile: {
                 name: 'Sofia',
                 avatar:'./assets/img/avatar_io.jpg'
