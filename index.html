@@ -100,10 +100,10 @@
                 </div>
                 <div class="col_chat">
 
-                    <div class="left_chat">
-                        <div class="message_received" v-for="archive in messages"  >
+                    <div class="left_chat" v-for="chat in contacts">
+                        <div class="message_received" v-for="archive in messages[activeContact]" >
                             
-                            {{ contacts.chat.messages[activeContact].archive.message }}
+                            {{ archive[activeContact].message }}
 
                         </div>
                     </div>
