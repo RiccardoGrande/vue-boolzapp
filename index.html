@@ -100,17 +100,21 @@
                 </div>
                 <div class="col_chat">
 
-                    <div class="left_chat" v-for="chat in contacts">
-                        <div class="message_received" v-for="archive in messages[activeContact]" >
-                            
-                            {{ archive[activeContact].message }}
+                    <div class="chat" :class="singleMessage.status" v-for="singleMessage in contacts[activeContact].messages">
 
+                        <div class="message">
+                            {{singleMessage.message}}
                         </div>
-                    </div>
-                    <div class="right_chat">
+                       
+                            
+                       
+                        
+                        
 
-                        <div class="message_sent">ciao</div>
                     </div>
+
+                        
+                    
 
                 </div>
 
