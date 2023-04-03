@@ -2,11 +2,15 @@
 
 const { createApp } = Vue
 
+
+
 createApp({
     data(){
-
+        
         return{
             
+            currentDateHour: new Date().getHours(),
+            currentDateMinutes: new Date().getMinutes(),
             profile: {
                 name: 'Sofia',
                 avatar:'./assets/img/avatar_io.jpg'

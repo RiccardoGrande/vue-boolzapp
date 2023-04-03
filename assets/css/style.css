@@ -74,6 +74,7 @@
     background-color: #ffff;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     
 }
 
@@ -109,6 +110,13 @@
     display: flex;
     align-items: center;
     
+}
+
+.content_contact_profile{
+
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .col_chat{
@@ -154,6 +162,14 @@ img{
     height: 40px;
     border-radius: 50%;
     margin-right: 5px;
+
+}
+
+.currentDate{
+
+    color: var(--icon_nav);
+    font-size: 10px;
+    padding: 10px;
 
 }
 

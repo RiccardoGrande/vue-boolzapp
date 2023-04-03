@@ -51,13 +51,30 @@
                     </div>
                 </div>
                 <div class="col" v-for="chat in contacts">
-                    <img :src="chat.avatar" alt="avatar_image" >
-                    <div>
-                        <div class="name">{{chat.name}}</div>
                     
-                    <div class="last_message">
-                       ultimo messaggio inviato
+                    <div class="content_contact_profile">
+                        
+                        <img :src="chat.avatar" alt="avatar_image" >
+
+                        <div>
+
+                            <div class="name">
+                            
+                                {{chat.name}}
+    
+                            </div>
+                        
+                            <div class="last_message">
+                            ultimo messaggio inviato
+                            </div>
+
+                        </div>
+                        
+
                     </div>
+
+                    <div class="currentDate">
+                        {{currentDateHour}}: {{currentDateMinutes}}
 
                     </div>
                     
