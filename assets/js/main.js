@@ -185,18 +185,6 @@ createApp({
         }
 
         
-    },
-    methods: {
-
-        selectChat(){
-
-            if (col === active[i]) {
-
-                
-
-            }
-        }
-
     }
 
 }).mount('#app')

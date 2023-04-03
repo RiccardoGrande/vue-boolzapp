@@ -50,7 +50,7 @@
                         <input id="input_message" type="text" placeholder="cerca o inizia una nuova chat">
                     </div>
                 </div>
-                <div class="col" @click="selectChat()" :class="index === activeContact ? 'active' : ''" v-for="chat in contacts">
+                <div class="col" :class="index === activeContact ? 'active' : ''" v-for="(chat, index) in contacts" @click="activeContact = index">
                     
                     <div class="content_contact_profile">
                         
@@ -84,8 +84,8 @@
             </div>
             <div class="debug row_chat_section">
                 <div class="col_nav">
-                    <div class="profile_nav">
-                        <img class="img_nav" src="./assets/img/avatar_1.jpg" alt="avatar_michele" srcset="">
+                    <div class="profile_nav" v-for="(chat, index) in contacts">
+                        <img class="img_nav" :src="chat.avatar " alt="avatar_michele">
                         <div>
                             Michele
                         </div>
