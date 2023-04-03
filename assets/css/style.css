@@ -16,6 +16,8 @@
     --icon_nav: #b1b1b1;
     --col-notifiche: #8edafc;
     --col-active: #e9ebeb;
+    --bg-sent: #d5f9ba;
+    
 
 }
 
@@ -79,7 +81,7 @@
     
 }
 
-.col:active{
+.col.active{
 
     background-color: var(--col-active);
 
@@ -140,12 +142,15 @@
 
     width: 50%;
     height: 100%;
+    margin-left: 3rem;
 }
 
 .right_chat{
 
     width: 50%;
     height: 100%;
+    display: flex;
+    
 
 }
 
@@ -251,6 +256,23 @@ img{
     font-size: 15px;
     padding-top: 5px;
     padding-left: 5px;
+}
+
+.message_received{
+
+    width: 60%;
+    height: 70px;
+    background-color: #ffff;
+
+}
+
+.message_sent{
+
+    width: 60%;
+    height: 70px;
+    background-color: var(--bg-sent);
+    align-self: flex-end;
+
 }
 
 .last_message{
