@@ -85,6 +85,7 @@
 
 }
 
+
 .col_notifiche{
 
     width: 100%;
@@ -131,7 +132,21 @@
     flex-grow: 2;
     background-image: url('../img/mine.jpg');
     width: 100%;
+    display: flex;
     
+}
+
+.left_chat{
+
+    width: 50%;
+    height: 100%;
+}
+
+.right_chat{
+
+    width: 50%;
+    height: 100%;
+
 }
 
 .col_empty_bottom{

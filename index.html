@@ -50,7 +50,7 @@
                         <input id="input_message" type="text" placeholder="cerca o inizia una nuova chat">
                     </div>
                 </div>
-                <div class="col" :class="index === activeContact ? 'active' : ''" v-for="chat in contacts">
+                <div class="col" @click="selectChat()" :class="index === activeContact ? 'active' : ''" v-for="chat in contacts">
                     
                     <div class="content_contact_profile">
                         
@@ -98,7 +98,20 @@
                     </div>
 
                 </div>
-                <div class="col_chat"></div>
+                <div class="col_chat">
+
+                    <div class="left_chat">
+                        <div class="message_received" v-if="status === 'received'" v-for="">
+                            {{}}
+
+                        </div>
+                    </div>
+                    <div class="right_chat">
+
+                        <div class="message_sent"></div>
+                    </div>
+
+                </div>
 
                 <div class="col_chat_interaction">
 
