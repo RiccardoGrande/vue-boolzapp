@@ -6,6 +6,11 @@ createApp({
     data(){
 
         return{
+            
+            profile: {
+                name: 'Sofia',
+                avatar:'./assets/img/avatar_io.jpg'
+            },
 
             contacts: [
                 {
