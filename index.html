@@ -47,11 +47,11 @@
                     <span id="icon_find_chat"><i class="fa-solid fa-magnifying-glass"></i></span>
                     
                     <div id="message_to_write">
-                        <input id="input_message" type="text" placeholder="cerca o inizia una nuova chat" v-model="searchName" @keyup.enter="addSearch">
+                        <input id="input_message" type="text" placeholder="cerca o inizia una nuova chat" v-model="searchName" >
                     </div>
                 </div>
                 
-                <div class="col" :class="index === activeContact ? 'active' : ''" v-for="(chat, index) in contacts" @click="activeContact = index">
+                <div class="col" :class="index === activeContact ? 'active' : ''" v-for="(chat, index) in filteredContacts" @click="activeContact = index">
                     <div class="content_contact_profile">
                         
                         <img :src="chat.avatar" alt="avatar_image" >

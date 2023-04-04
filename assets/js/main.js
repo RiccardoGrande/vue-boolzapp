@@ -213,14 +213,20 @@ createApp({
 
                 })
             }, 1000 )
-        },
-        /* addSearch(){
+        }
+    },
 
-            
+    //creo la proprietà computed
+    computed: {
+        
+    //creo una funzione chiamta filteredContacts che mi riprende il loop v-for alla riga 54 dell' HTML
+        filteredContacts(){
+
+            //ciclo all'interno della funzione i contatti andando a filtrare i miei contatti includendo nella ricerca l'oggetto da me scritto nella sezione del search
             return this.contacts.filter(chat => {
               return chat.name.toLowerCase().includes(this.searchName.toLowerCase())
             })
               
-        } */
+        }
     }
 }).mount('#app')
