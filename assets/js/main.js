@@ -4,6 +4,9 @@ const { createApp } = Vue
 
 
 
+
+
+
 createApp({
     data(){
         
@@ -12,6 +15,7 @@ createApp({
             currentDateHour: new Date().getHours(),
             currentDateMinutes: new Date().getMinutes(),
             activeContact: 0,
+            newMessage: '',
             profile: {
                 name: 'Sofia',
                 avatar:'./assets/img/avatar_io.jpg'
@@ -185,6 +189,24 @@ createApp({
         }
 
         
+    },
+    methods: {
+
+        addMessage(){
+           
+            this.contacts[this.activeContact].messages.push( {
+                date: new Date().toLocaleTimeString(), 
+                message: this.newMessage,
+                status: 'sent'
+            })
+
+            this.newMessage = '',
+            this.reply()
+
+        },
+        reply(){
+            
+        }
     }
 
 }).mount('#app')
