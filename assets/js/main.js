@@ -17,6 +17,7 @@ createApp({
             currentDateMinutes: new Date().getMinutes(),
             activeContact: 0,
             newMessage: '',
+            searchName:'',
             profile: {
                 name: 'Sofia',
                 avatar:'./assets/img/avatar_io.jpg'
@@ -215,6 +216,9 @@ createApp({
 
                 })
             }, 1000 )
+        },
+        addSearch(){
+
         }
     }
 }).mount('#app')
