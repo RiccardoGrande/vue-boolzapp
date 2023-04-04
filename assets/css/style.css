@@ -263,7 +263,7 @@ img{
 
 .received{
 
-    width: 40%;
+    width: 30%;
     height: 50px;
     background-color: #ffff;
     font-size: 12px;
@@ -274,11 +274,11 @@ img{
 
 .sent{
 
-    width: 40%;
+    width: 30%;
     height: 50px;
     background-color: var(--bg-sent);
     font-size: 12px;
-    margin-left: 11rem;
+    margin-left: 22rem;
     margin-bottom: 1rem;
 
 }
