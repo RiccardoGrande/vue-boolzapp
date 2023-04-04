@@ -219,6 +219,11 @@ createApp({
         },
         addSearch(){
 
+            
+            return this.contacts.filter(chat => {
+              return chat.name.toLowerCase().includes(this.searchName.toLowerCase())
+            })
+              
         }
     }
 }).mount('#app')
