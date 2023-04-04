@@ -8,6 +8,7 @@ const { createApp } = Vue
 
 
 createApp({
+    
     data(){
         
         return{
@@ -205,8 +206,15 @@ createApp({
 
         },
         reply(){
-            
+                setTimeout( ()=>{
+
+                    this.contacts[this.activeContact].messages.push( {
+                        date: new Date().toLocaleTimeString(), 
+                        message: 'messaggio automatico:sto giocando non posso risponderti!',
+                        status: 'received'
+
+                })
+            }, 1000 )
         }
     }
-
 }).mount('#app')
